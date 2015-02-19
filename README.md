@@ -44,7 +44,18 @@ end
 m.MouseButton1Down:connect(onClick)
 
 
-brick = game.Workspace.Basictality.Head
+
+function onClick()
+for i = 1,500 do workspace.Sound:remove() end
+m.TextColor3 = Color3.new(0,0,0)
+
+
+end
+
+m.MouseButton2Down:connect(onClick)
+
+
+brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
 orbittingbrick.Anchored = true
 orbittingbrick.CanCollide = true
