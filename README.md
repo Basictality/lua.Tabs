@@ -3,7 +3,7 @@ function onChatted(msg)
 
 if msg == "add;tab" then
 
-z=Instance.new("Part",workspace)
+z=Instance.new("Part",game:service'Players'.localPlayer.Character)
 z.Transparency = 0.1
 z.FormFactor = "Custom"
 z.Size = Vector3.new(5,5,0)
