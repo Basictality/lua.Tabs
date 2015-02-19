@@ -28,6 +28,16 @@ m:TweenPosition(UDim2.new(0,0,0,300),"In",style,interval,false)
 m.FontSize = Enum.FontSize.Size48
 m.BackgroundColor3 = Color3.new(255,255,255)
 
+function MouseEnter()
+m.TextColor = Color3.new(0,1,0);
+
+function MouseLeave()
+m.TextColor = Color3.new(0,0,0);
+end
+
+m.MouseEnter:connect(MouseEnter)
+m.MouseLeave:connect(MouseLeave)
+
 brick = game.Workspace.Basictality.Head
 orbittingbrick = z
 orbittingbrick.Anchored = true
