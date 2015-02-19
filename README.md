@@ -4,7 +4,7 @@ function onChatted(msg)
 if msg == "add;tab" then
 
 z=Instance.new("Part",game:service'Players'.localPlayer.Character)
-z.Transparency = 0.1
+z.Transparency = 0.5
 z.FormFactor = "Custom"
 z.Size = Vector3.new(5,5,0)
 z.TopSurface = "Smooth"
@@ -13,7 +13,7 @@ z.Color = Color3.new(0,0,0)
 
 x=Instance.new("SelectionBox",z)
 x.Adornee=z
-x.Transparency=0.1
+x.Transparency=0.5
 x.Color=BrickColor.new('Really black');
 
 b=Instance.new("SurfaceGui",z)
@@ -59,7 +59,7 @@ distancefrombrick = 10
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.Angles(0,math.rad(i),0) * CFrame.new(-1,0,-distancefrombrick)
+orbittingbrick.CFrame = brick.CFrame * CFrame.new(-1,0,-distancefrombrick)
 end
 end
 
