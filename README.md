@@ -1,9 +1,4 @@
-god = game:service'Players'.localPlayer -- who's chat the commands respond to
-function onChatted(msg)
-
-if msg == "add;tab" then
-
-z=Instance.new("Part",game:service'Players'.localPlayer.Character)
+z=Instance.new("Part",workspace)
 z.Transparency = 0.5
 z.FormFactor = "Custom"
 z.Size = Vector3.new(15,15,0)
@@ -62,7 +57,3 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.new(-1,5,-distancefrombrick)
 end
 end
-
-end 
-end 
-god.Chatted:connect(onChatted) 
