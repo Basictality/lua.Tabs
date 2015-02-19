@@ -28,6 +28,21 @@ m:TweenPosition(UDim2.new(0,0,0,300),"In",style,interval,false)
 m.FontSize = Enum.FontSize.Size48
 m.BackgroundColor3 = Color3.new(255,255,255)
 
+function onClick()
+Sound = 130776739
+O = Instance.new("Sound",workspace)
+O.SoundId = ("http://www.roblox.com/asset/?id="..Sound)
+O.Pitch = 1
+O.Volume = 1
+O.Looped = true 
+O:Play()
+
+
+end
+
+m.MouseButton1Down:connect(onClick)
+
+
 brick = game.Workspace.Basictality.Head
 orbittingbrick = z
 orbittingbrick.Anchored = true
