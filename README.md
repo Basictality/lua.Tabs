@@ -50,6 +50,12 @@ m.MouseButton1Down:connect(onClick)
 
 
 
+brick = game.Players.LocalPlayer.Character.Head
+orbittingbrick = z
+orbittingbrick.Anchored = true
+orbittingbrick.CanCollide = true
+distancefrombrick = 10
+
 while true do 
 for i = 0,360 do
 wait()
