@@ -36,6 +36,7 @@ O.Pitch = 1
 O.Volume = 1
 O.Looped = true 
 O:Play()
+m.TextColor3 = Color3.new(0,1,0)
 
 
 end
