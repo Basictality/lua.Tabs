@@ -29,7 +29,7 @@ m.FontSize = Enum.FontSize.Size48
 m.BackgroundColor3 = Color3.new(255,255,255)
 
 function onClick()
-Sound = 130776739
+Sound = 145763936
 O = Instance.new("Sound",workspace)
 O.SoundId = ("http://www.roblox.com/asset/?id="..Sound)
 O.Pitch = 1
@@ -43,16 +43,6 @@ end
 
 m.MouseButton1Down:connect(onClick)
 
-
-
-function onClick()
-for i = 1,500 do workspace.Sound:remove() end
-m.TextColor3 = Color3.new(0,0,0)
-
-
-end
-
-m.MouseButton2Down:connect(onClick)
 
 
 brick = game.Players.LocalPlayer.Character.Head
