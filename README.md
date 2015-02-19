@@ -1,3 +1,8 @@
+god = game:service'Players'.localPlayer -- who's chat the commands respond to
+function onChatted(msg)
+
+if msg == "add;tab" then
+
 z=Instance.new("Part",workspace)
 z.Transparency = 0.1
 z.FormFactor = "Custom"
@@ -9,7 +14,7 @@ z.Color = Color3.new(0,0,0)
 x=Instance.new("SelectionBox",z)
 x.Adornee=z
 x.Transparency=0.1
-x.Color=BrickColor.new('Cyan');
+x.Color=BrickColor.new('Really black');
 
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
@@ -57,3 +62,7 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.Angles(0,math.rad(i),0) * CFrame.new(-1,0,-distancefrombrick)
 end
 end
+
+end 
+end 
+god.Chatted:connect(onChatted) 
