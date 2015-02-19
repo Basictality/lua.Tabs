@@ -6,7 +6,7 @@ if msg == "add;tab" then
 z=Instance.new("Part",game:service'Players'.localPlayer.Character)
 z.Transparency = 0.5
 z.FormFactor = "Custom"
-z.Size = Vector3.new(10,10,0)
+z.Size = Vector3.new(20,20,0)
 z.TopSurface = "Smooth"
 z.BottomSurface = "Smooth"
 z.Color = Color3.new(0,0,0)
