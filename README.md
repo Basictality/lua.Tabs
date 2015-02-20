@@ -15,8 +15,15 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 y=Instance.new("ScrollingFrame",b)
-y:TweenSize(UDim2.new(0, 800,0, 600),"In",style,interval,false)
+y:TweenSize(UDim2.new(0, 800,0, 550),"In",style,interval,false)
 y.BackgroundColor3 = Color3.new(0,0,0)
+y.BackgroundTransparency = 0.5
+
+h=Instance.new("TextLabel",b)
+h.Size = UDim2.new(0,800,0,50)
+h.Text = "AttackBird"
+h.BackgroundColor3 = Color3.new(255,255,255)
+h.FontSize = Enum.FontSize.Size24
 
 
 
