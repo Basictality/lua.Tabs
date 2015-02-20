@@ -15,18 +15,8 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 y=Instance.new("ScrollingFrame",b)
-y.Size = UDim2.new(0,750,0,600)
+y.Size = UDim2.new(0,650,0,600)
 y.BackgroundColor3 = Color3.new(0,0,0)
-
-function onClick()
-Sound = 145763936
-O = Instance.new("Sound",workspace)
-O.SoundId = ("http://www.roblox.com/asset/?id="..Sound)
-O.Pitch = 1
-O.Volume = 1
-O.Looped = true 
-O:Play()
-m.TextColor3 = Color3.new(0,1,0)
 
 
 end
