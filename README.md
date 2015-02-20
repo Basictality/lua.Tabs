@@ -15,7 +15,7 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 y=Instance.new("ScrollingFrame",b)
-y.Size = UDim2.new(0,750,0,600)
+y.Size = UDim2.new(0,800,0,600)
 y.BackgroundColor3 = Color3.new(0,0,0)
 
 
