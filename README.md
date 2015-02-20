@@ -13,26 +13,10 @@ x.Color=BrickColor.new('Really black');
 
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
-q=Instance.new("TextLabel",b)
-q.BackgroundTransparency = 0.5
-q.BackgroundColor3 = Color3.new(0,0,0)
-q.Text = "Welcome, "..game.Players.LocalPlayer.Name.."!"
-q:TweenSize(UDim2.new(0, 800,0, 50),"In",style,interval,false)
-q.FontSize = Enum.FontSize.Size48
-q.BackgroundColor3 = Color3.new(255,255,255)
-wait(1)
-q:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
-wait()
-q:remove()
 
 y=Instance.new("ScrollingFrame",b)
 y.Size = UDim2.new(0,850,0,550)
-m=Instance.new("TextButton",y)
-m.Text = "Play"
-m:TweenSize(UDim2.new(0, 800,0, 300),"In",style,interval,false)
-m:TweenPosition(UDim2.new(0,0,0,300),"In",style,interval,false)
-m.FontSize = Enum.FontSize.Size48
-m.BackgroundColor3 = Color3.new(255,255,255)
+y.BackgroundColor3 = Color3.new(0,0,0)
 
 function onClick()
 Sound = 145763936
