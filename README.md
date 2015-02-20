@@ -20,6 +20,7 @@ y.BackgroundColor3 = Color3.new(0,0,0)
 y.BackgroundTransparency = 0.5
 
 h=Instance.new("TextLabel",b)
+h.BackgroundTransparency = 0.3
 h.Size = UDim2.new(0,800,0,50)
 h.Text = "AttackBird"
 h.BackgroundColor3 = Color3.new(0,0,0)
