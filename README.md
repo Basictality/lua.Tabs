@@ -19,11 +19,6 @@ y.Size = UDim2.new(0,650,0,600)
 y.BackgroundColor3 = Color3.new(0,0,0)
 
 
-end
-
-m.MouseButton1Down:connect(onClick)
-
-
 
 brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
