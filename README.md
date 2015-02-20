@@ -14,9 +14,10 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 q=Instance.new("TextLabel",b)
+q.BackgroundTransparency = 0.5
+q.BackgroundColor3 = Color3.new(0,0,0)
 q.Text = "Welcome, "..game.Players.LocalPlayer.Name.."!"
 q:TweenSize(UDim2.new(0, 800,0, 50),"In",style,interval,false)
-q:TweenPosition(UDim2.new(0,0,0,1),"In",style,interval,false)
 q.FontSize = Enum.FontSize.Size48
 q.BackgroundColor3 = Color3.new(255,255,255)
 wait(1)
