@@ -15,7 +15,7 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 y=Instance.new("ScrollingFrame",b)
-y:TweenSize(UDim2.new(0, 800,0, 550),"In",style,interval,false)
+y:TweenSize(UDim2.new(0, 750,0, 600),"In",style,interval,false)
 y.BackgroundColor3 = Color3.new(0,0,0)
 y.BackgroundTransparency = 0.5
 y.Position = UDim2.new(0,-1,0,0)
