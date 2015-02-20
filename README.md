@@ -24,9 +24,9 @@ q:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 wait()
 q:remove()
 
-z=Instance.new("ScrollingFrame",b)
-z.Size = UDim2.new(0,900,0,500)
-m=Instance.new("TextButton",z)
+y=Instance.new("ScrollingFrame",b)
+y.Size = UDim2.new(0,850,0,550)
+m=Instance.new("TextButton",y)
 m.Text = "Play"
 m:TweenSize(UDim2.new(0, 800,0, 300),"In",style,interval,false)
 m:TweenPosition(UDim2.new(0,0,0,300),"In",style,interval,false)
