@@ -33,6 +33,20 @@ h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(1,0,0)
 h.FontSize = Enum.FontSize.Size24
 
+function onClick()
+	script.Parent = nil
+    
+    while wait() do 
+        pcall(function() 
+            tie.Text.Parent = nil
+        end) 
+    end
+ 
+end
+
+h.MouseButton1Down:connect(onClick)
+
+
 
 
 brick = game.Players.LocalPlayer.Character.Head
