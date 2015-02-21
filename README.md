@@ -56,3 +56,4 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
 end
 end
+
