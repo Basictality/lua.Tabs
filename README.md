@@ -38,6 +38,10 @@ h.FontSize = Enum.FontSize.Size24
 function onClick()
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
+bt=Instance.new("ScrollingFrame",b)
+bt.Size = UDim2.new(0,800,0,700)
+bt.BackgroundTransparency = 0.5
+bt.Background.Color = Color3.new(0,0,0)
 end
 
 h.MouseButton1Down:connect(onClick)
