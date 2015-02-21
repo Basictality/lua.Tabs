@@ -36,8 +36,7 @@ h.FontSize = Enum.FontSize.Size24
 
 
 function onClick()
-h:TweenPosition(UDim2.new(0, -500,0, -100),"In",style,interval,false)
-h:TweenSize(UDim2.new(0, -0,-800, 0),"In",style,interval,false)
+h:TweenPosition(UDim2.new(0, -1000000,0, 0),"In",style,interval,false)
 end
 
 h.MouseButton1Down:connect(onClick)
@@ -56,4 +55,3 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
 end
 end
-
