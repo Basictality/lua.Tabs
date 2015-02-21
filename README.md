@@ -28,11 +28,11 @@ brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
 orbittingbrick.Anchored = true
 orbittingbrick.CanCollide = true
-distancefrombrick = 10
+distancefrombrick = 5
 
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.Angles(0,0,4) * CFrame.new(0,0,-distancefrombrick)
+orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.new(0,0,-distancefrombrick)
 end
 end
