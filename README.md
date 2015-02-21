@@ -1,5 +1,5 @@
 z=Instance.new("Part",workspace)
-z.Transparency = 0.5
+z.Transparency = 0.6
 z.FormFactor = "Custom"
 z.Size = Vector3.new(15,15,0)
 z.TopSurface = "Smooth"
@@ -14,15 +14,10 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-y=Instance.new("ScrollingFrame",b)
-y:TweenSize(UDim2.new(0, 790,0, 600),"In",style,interval,false)
-y.BackgroundColor3 = Color3.new(0,0,0)
-y.BackgroundTransparency = 0.5
-
 h=Instance.new("TextLabel",b)
-h.BackgroundTransparency = 0.3
+h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,50)
-h.Text = "AttackBird"
+h.Text = "Commands:"
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
 h.FontSize = Enum.FontSize.Size24
@@ -38,6 +33,6 @@ distancefrombrick = 10
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(-1,5,-distancefrombrick)
+orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.Angles(0,math.rad(i),0) * CFrame.new(0,0,-distancefrombrick)
 end
 end
