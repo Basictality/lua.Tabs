@@ -28,7 +28,7 @@ b.Face = "Back"
 h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,100)
-h.Text = "Banned: "..tie.Text
+h.Text = "Ban"
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(1,0,0)
 h.FontSize = Enum.FontSize.Size24
@@ -44,6 +44,6 @@ distancefrombrick = 5
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,5,-distancefrombrick)
+orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,10,-distancefrombrick)
 end
 end
