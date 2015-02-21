@@ -1,9 +1,11 @@
-screngui=Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui
+screngui=Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
 tie=Instance.new("TextBox",screngui)
-tie.Size = UDim2.new(0,100,0,50)
-tie.BackgroundColor3 = Color3.new(255,255,255)
-tie.TextColor3 = Color3.new(0,0,0)
-tie.BackgroundTransparency = 0.5
+tie:TweenSize(UDim2.new(0, 500,0, 50),"In",style,interval,false)
+tie.BackgroundColor3 = Color3.new(0,0,0)
+tie.TextColor3 = Color3.new(255,255,255)
+tie.BackgroundTransparency = 0.3
+tie:TweenPosition(UDim2.new(0, 300,0, 0),"In",style,interval,false)
+tie.FontSize = Enum.FontSize.Size24
 
 
 
@@ -42,6 +44,6 @@ distancefrombrick = 5
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.new(0,5,-distancefrombrick)
+orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,0,-distancefrombrick)
 end
 end
