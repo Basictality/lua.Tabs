@@ -27,7 +27,7 @@ b.Face = "Back"
 
 h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
-h:TweenSize(UDim2.new(0, 800,0, 50),"In",style,interval,false)
+h:TweenSize(UDim2.new(0, 800,0, 100),"In",style,interval,false)
 h.Text = "Commands"
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
@@ -36,7 +36,8 @@ h.FontSize = Enum.FontSize.Size24
 
 
 function onClick()
-h:TweenPosition(UDim2.new(0, -1000000,0, 0),"In",style,interval,false)
+h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
+h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 end
 
 h.MouseButton1Down:connect(onClick)
