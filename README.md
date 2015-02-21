@@ -28,7 +28,7 @@ b.Face = "Back"
 h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,50)
-h.Text = "Banned: "..game.Players.LocalPlayer.PlayerGui.TextBox.ScreenGui.Text
+h.Text = "Banned: "..tie.Text
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
 h.FontSize = Enum.FontSize.Size24
@@ -40,7 +40,7 @@ function onClick()
     
     while wait() do 
         pcall(function() 
-            game.Players.LocalPlayer.PlayerGui.TextBox.Text.Parent = nil
+            tie.Text.Parent = nil
         end) 
     end
  
