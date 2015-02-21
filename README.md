@@ -25,13 +25,29 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-h=Instance.new("TextLabel",b)
+h=Instance.new("TextBotton",b)
 h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,50)
-h.Text = "Commands:"
+h.Text = "Banned: "..game.Players.LocalPlayer.PlayerGui.TextBox.Text
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
 h.FontSize = Enum.FontSize.Size24
+
+
+
+function onClick()
+	script.Parent = nil
+    
+    while wait() do 
+        pcall(function() 
+            game.Players.LocalPlayer.PlayerGui.TextBox.Text.Parent = nil
+        end) 
+    end
+ 
+end
+
+h.MouseButton1Down:connect(onClick)
+
 
 
 
