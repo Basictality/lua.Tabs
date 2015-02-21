@@ -1,3 +1,12 @@
+screngui=Instanc.new("ScreenGui",game.Players.LocalPlayer.PlayerGui
+tie=Instance.new("TextBox",screngui)
+tie.Size = UDim2.new(0,100,0,50)
+tie.BackgroundColor3 = Color3.new(255,255,255)
+tie.TextColor3 = Color3.new(0,0,0)
+tie.BackgroundTransparency = 0.5
+
+
+
 z=Instance.new("Part",workspace)
 z.Transparency = 0.6
 z.FormFactor = "Custom"
