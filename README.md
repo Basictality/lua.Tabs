@@ -44,8 +44,6 @@ Cha = Player.Character
 mouse.KeyDown:connect(function(key)
 key:lower()
 if key == "b" then
-script.Parent = nil
-    
     while wait() do 
         pcall(function() 
             tie.Text.Parent = nil
