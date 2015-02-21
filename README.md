@@ -25,7 +25,7 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-h=Instance.new("TextBotton",b)
+h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,50)
 h.Text = "Banned: "..game.Players.LocalPlayer.PlayerGui.TextBox.Text
