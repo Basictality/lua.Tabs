@@ -36,8 +36,7 @@ h.FontSize = Enum.FontSize.Size24
 
 
 function onClick()
-h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
-h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
+h:TweenPosition(UDim2.new(0, -100,0, 0),"In",style,interval,false)
 end
 
 h.MouseButton1Down:connect(onClick)
