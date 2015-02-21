@@ -39,7 +39,7 @@ function onClick()
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 bt=Instance.new("ScrollingFrame",b)
-bt:TweenSize(UDim2.new(0, 790,0, 690),"In",style,interval,false)
+bt:TweenSize(UDim2.new(0, 790,0, 650),"In",style,interval,false)
 bt.BackgroundColor3 = Color3.new(0,0,0)
 bt:TweenPosition(UDim2.new(0, 10,0, 0),"In",style,interval,false)
 end
