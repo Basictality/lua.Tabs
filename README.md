@@ -27,25 +27,11 @@ b.Face = "Back"
 
 h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
-h.Size = UDim2.new(0,800,0,100)
-h.Text = "Ban"
+h:TweenSize(UDim2.new(0, 800,0, 100),"In",style,interval,false)
+h.Text = "Commands"
 h.BackgroundColor3 = Color3.new(0,0,0)
-h.TextColor3 = Color3.new(1,0,0)
+h.TextColor3 = Color3.new(255,255,255)
 h.FontSize = Enum.FontSize.Size24
-
-function onClick()
-	script.Parent = nil
-    
-    while wait() do 
-        pcall(function() 
-            tie.Text.Parent = nil
-        end) 
-    end
- 
-end
-
-h.MouseButton1Down:connect(onClick)
-
 
 
 
@@ -58,6 +44,6 @@ distancefrombrick = 5
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,5,-distancefrombrick)
+orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
 end
 end
