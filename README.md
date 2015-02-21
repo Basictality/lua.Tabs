@@ -33,6 +33,6 @@ distancefrombrick = 10
 while true do 
 for i = 0,360 do
 wait()
-orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.Angles(0,4,0) * CFrame.new(0,0,-distancefrombrick)
+orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.Angles(0,0,4) * CFrame.new(0,0,-distancefrombrick)
 end
 end
