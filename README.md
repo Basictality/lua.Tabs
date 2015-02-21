@@ -25,33 +25,13 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-h=Instance.new("TextLabel",b)
+h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
 h.Size = UDim2.new(0,800,0,100)
 h.Text = "Banned: "..tie.Text
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(1,0,0)
 h.FontSize = Enum.FontSize.Size24
-
-
-
-p=game.Players.LocalPlayer
-c=p.Character
-m=p:GetMouse()
-Player = game:GetService("Players").LocalPlayer
-mouse=Player:GetMouse()
-Cha = Player.Character
-mouse.KeyDown:connect(function(key)
-key:lower()
-if key == "b" then
-    while wait() do 
-        pcall(function() 
-            tie.Text.Parent = nil
-        end) 
-    end
- 
-end
-end)
 
 
 
