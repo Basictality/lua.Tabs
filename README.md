@@ -1,14 +1,3 @@
-screngui=Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
-tie=Instance.new("TextBox",screngui)
-tie:TweenSize(UDim2.new(0, 500,0, 50),"In",style,interval,false)
-tie.BackgroundColor3 = Color3.new(0,0,0)
-tie.TextColor3 = Color3.new(255,255,255)
-tie.BackgroundTransparency = 0.3
-tie:TweenPosition(UDim2.new(0, 300,0, 0),"In",style,interval,false)
-tie.FontSize = Enum.FontSize.Size24
-
-
-
 z=Instance.new("Part",workspace)
 z.Transparency = 0.6
 z.FormFactor = "Custom"
@@ -32,6 +21,18 @@ h.Text = "Commands"
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
 h.FontSize = Enum.FontSize.Size24
+
+
+function MouseEnter()
+h.BackgroundColor3 = Color3.new(0,0,1)
+end
+
+function MouseLeave()
+h.BackgroundColor3 = Color3.new(0,0,0)
+end
+
+h.MouseEnter:connect(MouseEnter)
+h.MouseLeave:connect(MouseLeave)
 
 
 
