@@ -6,6 +6,14 @@ z.TopSurface = "Smooth"
 z.BottomSurface = "Smooth"
 z.Color = Color3.new(0,0,0)
 
+function onTouched(hit)
+local human = hit.Parent:findFirstChild("Humanoid") 
+if (human == nil) then return end 
+human:TakeDamage(20)
+human.Health = human.MaxHealth
+end 
+z.Touched:connect(onTouched)
+
 x=Instance.new("SelectionBox",z)
 x.Adornee=z
 x.Transparency=0.5
