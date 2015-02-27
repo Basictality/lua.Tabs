@@ -16,7 +16,8 @@ b.Face = "Back"
 
 h=Instance.new("TextButton",b)
 h.BackgroundTransparency = 0.6
-h:TweenSize(UDim2.new(0, 800,0, 100),"In",style,interval,false)
+h:TweenPosition(UDim2.new(0, 0,0, 25),"In",style,interval,false)
+h:TweenSize(UDim2.new(0, 805,0, 101),"In",style,interval,false)
 h.Text = "Commands"
 h.BackgroundColor3 = Color3.new(0,0,0)
 h.TextColor3 = Color3.new(255,255,255)
