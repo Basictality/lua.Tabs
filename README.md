@@ -46,7 +46,14 @@ h.MouseLeave:connect(MouseLeave)
 
 
 function onClick()
-game.Players:ClearAllChildren()
+h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
+h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
+bt=Instance.new("ScrollingFrame",b)
+bt:TweenSize(UDim2.new(0, 790,0, 590),"In",style,interval,false)
+bt.BackgroundColor3 = Color3.new(0,0,0)
+bt.BackgroundTransparency=0.8
+bt:TweenPosition(UDim2.new(0, -15,0, 0),"In",style,interval,false)
+bt.BackgroundTransparency = 0.5
 end
 
 h.MouseButton1Down:connect(onClick)
