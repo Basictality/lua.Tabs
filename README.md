@@ -22,14 +22,10 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-h=Instance.new("TextButton",b)
-h.BackgroundTransparency = 0.6
+h=Instance.new("ImageButton",b)
+h.Image = "rbxassetid://225649799"
 h:TweenPosition(UDim2.new(0, 0,0, 25),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 805,0, 101),"In",style,interval,false)
-h.Text = "Commands"
-h.BackgroundColor3 = Color3.new(0,0,0)
-h.TextColor3 = Color3.new(255,255,255)
-h.FontSize = Enum.FontSize.Size24
 
 
 function MouseEnter()
