@@ -67,16 +67,16 @@ end
 
 
 
-brick = r65.Torso
-orbittingbrick = z2
-orbittingbrick.Anchored = true
-orbittingbrick.CanCollide = true
-distancefrombrick = 5
+brick1 = r65.Torso
+orbittingbrick1 = z2
+orbittingbrick1.Anchored = true
+orbittingbrick1.CanCollide = true
+distancefrombrick1 = 10
 
 while true do 
-for i = 0,360 do
+for i = 0,370 do
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(5,4,-distancefrombrick)
+orbittingbrick1.CFrame = brick1.CFrame * CFrame.new(5,4,-distancefrombrick1)
 end
 end
 
