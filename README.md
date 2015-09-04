@@ -49,7 +49,7 @@ sw.Text = "Settings"
 sw.FontSize = "Size24"
 sw.BackgroundTransparency = 1
 sw:TweenPosition(UDim2.new(0, 40,0, 60),"In",style,interval,false)
-sw:TweenSize(UDim2.new(0, 80,0, 130),"In",style,interval,false)
+sw:TweenSize(UDim2.new(0, 80,0, 150),"In",style,interval,false)
 ------------
 
 brick = game.Players.LocalPlayer.Character.Head
@@ -66,18 +66,7 @@ end
 end
 
 
-
-brick1 = r65.Torso
-orbittingbrick1 = z2
-orbittingbrick1.Anchored = true
-orbittingbrick1.CanCollide = true
-distancefrombrick1 = 10
-
-while true do 
-for x = 0,370 do
-wait()
-orbittingbrick1.CFrame = brick1.CFrame * CFrame.new(5,4,-distancefrombrick1)
-end
-end
-
-
+we2=Instance.new("Weld",z2)
+we2.Part0=z
+we2.Part1=z2
+we2.C0=CFrame.new(10,0,0)
