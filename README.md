@@ -30,6 +30,7 @@ bb:TweenSize(UDim2.new(0, 100,0, 100),"In",style,interval,false)
 
 sw=Instance.new("TextLabel",b)
 sw.Text = "Settings"
+sw.FontSize = "Size14"
 sw.BackgroundTransparency = 1
 sw:TweenPosition(UDim2.new(0, 40,0, 60),"In",style,interval,false)
 sw:TweenSize(UDim2.new(0, 50,0, 50),"In",style,interval,false)
