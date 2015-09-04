@@ -1,7 +1,7 @@
 z=Instance.new("Part",workspace)
 z.Transparency = 0.6
 z.FormFactor = "Custom"
-z.Size = Vector3.new(15,15,0)
+z.Size = Vector3.new(15,12,0)
 z.TopSurface = "Smooth"
 z.BottomSurface = "Smooth"
 z.Color = Color3.new(0,0,0)
@@ -23,7 +23,7 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 h=Instance.new("ImageButton",b)
-h.Image = "rbxassetid://3199048"
+h.Image = "rbxassetid://173669912"
 h.BackgroundTransparency = 1
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
