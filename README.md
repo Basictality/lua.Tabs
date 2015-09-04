@@ -25,7 +25,7 @@ b.Face = "Back"
 h=Instance.new("ImageButton",b)
 h.Image = "rbxassetid://225649799"
 h.BackgroundTransparency = 1
-h:TweenPosition(UDim2.new(0, -15,0, 25),"In",style,interval,false)
+h:TweenPosition(UDim2.new(0, -13,0, 25),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 50,0, 50),"In",style,interval,false)
 
 
