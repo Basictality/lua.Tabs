@@ -1,6 +1,6 @@
 r65 = game.Players.LocalPlayer.Character
 
-z=Instance.new("Part"r65)
+z=Instance.new("Part",r65)
 z.Transparency = 0.6
 z.FormFactor = "Custom"
 z.Size = Vector3.new(15,12,0)
