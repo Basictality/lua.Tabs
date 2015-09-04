@@ -22,10 +22,10 @@ h.BackgroundTransparency = 1
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
 ----------------------------------
-bb=Instance.new("ImageButton",b)
+bb=Instance.new("ImageButton"h)
 bb.Image = "rbxassetid://63822717"
 bb.BackgroundTransparency = 1
-bb:TweenPosition(UDim2.new(0, 40,0, 50),"In",style,interval,false)
+bb:TweenPosition(UDim2.new(0, 20,0, 40),"In",style,interval,false)
 bb:TweenSize(UDim2.new(0, 100,0, 100),"In",style,interval,false)
 
 sw=Instance.new("TextLabel",b)
