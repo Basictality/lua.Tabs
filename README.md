@@ -17,7 +17,7 @@ z2.TopSurface = "Smooth"
 z2.BottomSurface = "Smooth"
 z2.Color = Color3.new(0,0,0)
 
-z23=Instance.new("SelectionBox",z)
+z23=Instance.new("SelectionBox",z2)
 z23.Adornee=z2
 z23.Transparency=0.5
 z23.Color=BrickColor.new('Teal');
@@ -67,8 +67,8 @@ end
 
 
 
-brick = r65.Head
-orbittingbrick = z23
+brick = r65.Torso
+orbittingbrick = z2
 orbittingbrick.Anchored = true
 orbittingbrick.CanCollide = true
 distancefrombrick = 5
