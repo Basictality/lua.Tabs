@@ -22,40 +22,17 @@ x.Color=BrickColor.new('Really black');
 b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
-h=Instance.new("ImageButton",b)
-h.Image = "rbxassetid://57066102"
+h=Instance.new("ImageLabel",b)
+h.Image = "rbxassetid://122015131"
 h.BackgroundTransparency = 1
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
 
-
-function MouseEnter()
-h.BackgroundColor3 = Color3.new(0,0,1)
-end
-
-function MouseLeave()
-h.BackgroundColor3 = Color3.new(0,0,0)
-end
-
-h.MouseEnter:connect(MouseEnter)
-h.MouseLeave:connect(MouseLeave)
-
-
-
-function onClick()
-h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
-h:TweenSize(UDim2.new(0, 0,0, 0),"In",style,interval,false)
-bt=Instance.new("ScrollingFrame",b)
-bt:TweenSize(UDim2.new(0, 790,0, 590),"In",style,interval,false)
-bt.BackgroundColor3 = Color3.new(0,0,0)
-bt.BackgroundTransparency=0.8
-bt:TweenPosition(UDim2.new(0, -15,0, 0),"In",style,interval,false)
-bt.BackgroundTransparency = 0.5
-end
-
-h.MouseButton1Down:connect(onClick)
-
-
+bb=Instance.new("ImageLabel",b)
+bb.Image = "rbxassetid://63822717"
+bb.BackgroundTransparency = 1
+bb:TweenPosition(UDim2.new(0, 30,0, 0),"In",style,interval,false)
+bb:TweenSize(UDim2.new(0, 50,0, 50),"In",style,interval,false)
 
 brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
