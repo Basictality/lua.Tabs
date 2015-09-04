@@ -49,7 +49,7 @@ sw.Text = "Settings"
 sw.FontSize = "Size24"
 sw.BackgroundTransparency = 1
 sw:TweenPosition(UDim2.new(0, 40,0, 60),"In",style,interval,false)
-sw:TweenSize(UDim2.new(0, 80,0, 100),"In",style,interval,false)
+sw:TweenSize(UDim2.new(0, 80,0, 130),"In",style,interval,false)
 ------------
 
 brick = game.Players.LocalPlayer.Character.Head
