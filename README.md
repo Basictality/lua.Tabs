@@ -12,7 +12,7 @@ z.Color = Color3.new(0,0,0)
 z2=Instance.new("Part",z)
 z2.Transparency = 0.6
 z2.FormFactor = "Custom"
-z2.Size = Vector3.new(15,12,0)
+z2.Size = Vector3.new(15,10,0)
 z2.TopSurface = "Smooth"
 z2.BottomSurface = "Smooth"
 z2.Color = Color3.new(0,0,0)
@@ -68,7 +68,7 @@ end
 
 
 brick = r65.Head
-orbittingbrick = z2
+orbittingbrick = z23
 orbittingbrick.Anchored = true
 orbittingbrick.CanCollide = true
 distancefrombrick = 5
