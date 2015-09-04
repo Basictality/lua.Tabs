@@ -6,13 +6,7 @@ z.TopSurface = "Smooth"
 z.BottomSurface = "Smooth"
 z.Color = Color3.new(0,0,0)
 
-function onTouched(hit)
-local human = hit.Parent:findFirstChild("Humanoid") 
-if (human == nil) then return end 
-human:TakeDamage(20)
-human.Health = human.MaxHealth
-end 
-z.Touched:connect(onTouched)
+
 
 x=Instance.new("SelectionBox",z)
 x.Adornee=z
@@ -23,16 +17,16 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 h=Instance.new("ImageLabel",b)
-h.Image = "rbxassetid://122015131"
+h.Image = "rbxassetid://88092458"
 h.BackgroundTransparency = 1
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
 
-bb=Instance.new("ImageLabel",b)
+bb=Instance.new("ImageButton",b)
 bb.Image = "rbxassetid://63822717"
 bb.BackgroundTransparency = 1
-bb:TweenPosition(UDim2.new(0, 30,0, 0),"In",style,interval,false)
-bb:TweenSize(UDim2.new(0, 50,0, 50),"In",style,interval,false)
+bb:TweenPosition(UDim2.new(0, 40,0, 50),"In",style,interval,false)
+bb:TweenSize(UDim2.new(0, 100,0, 100),"In",style,interval,false)
 
 brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
