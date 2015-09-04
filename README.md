@@ -23,7 +23,7 @@ b=Instance.new("SurfaceGui",z)
 b.Face = "Back"
 
 h=Instance.new("ImageButton",b)
-h.Image = "rbxassetid://122015131"
+h.Image = "rbxassetid://57066102"
 h.BackgroundTransparency = 1
 h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
 h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
