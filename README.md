@@ -8,7 +8,6 @@ z.TopSurface = "Smooth"
 z.BottomSurface = "Smooth"
 z.Color = Color3.new(0,0,0)
 
---tab
 z2=Instance.new("Part",z)
 z2.Transparency = 0.6
 z2.FormFactor = "Custom"
@@ -22,35 +21,10 @@ z23.Adornee=z2
 z23.Transparency=0.5
 z23.Color=BrickColor.new('Teal');
 
-
-
 x=Instance.new("SelectionBox",z)
 x.Adornee=z
 x.Transparency=0.5
 x.Color=BrickColor.new('Really black');
-
-b=Instance.new("SurfaceGui",z)
-b.Face = "Back"
-
-h=Instance.new("ImageLabel",b)
-h.Image = "rbxassetid://88092458"
-h.BackgroundTransparency = 1
-h:TweenPosition(UDim2.new(0, 0,0, 0),"In",style,interval,false)
-h:TweenSize(UDim2.new(0, 800,0, 590),"In",style,interval,false)
-----------------------------------
-bb=Instance.new("ImageButton",h)
-bb.Image = "rbxassetid://63822717"
-bb.BackgroundTransparency = 1
-bb:TweenPosition(UDim2.new(0, 20,0, 40),"In",style,interval,false)
-bb:TweenSize(UDim2.new(0, 100,0, 100),"In",style,interval,false)
-
-sw=Instance.new("TextLabel",b)
-sw.Text = "Settings"
-sw.FontSize = "Size24"
-sw.BackgroundTransparency = 1
-sw:TweenPosition(UDim2.new(0, 40,0, 60),"In",style,interval,false)
-sw:TweenSize(UDim2.new(0, 80,0, 150),"In",style,interval,false)
-------------
 
 we2=Instance.new("Weld",z2)
 we2.Part0=z
