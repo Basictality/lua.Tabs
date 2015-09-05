@@ -52,6 +52,12 @@ sw:TweenPosition(UDim2.new(0, 40,0, 60),"In",style,interval,false)
 sw:TweenSize(UDim2.new(0, 80,0, 150),"In",style,interval,false)
 ------------
 
+we2=Instance.new("Weld",z2)
+we2.Part0=z
+we2.Part1=z2
+we2.C0=CFrame.new(10,0,0)
+
+
 brick = game.Players.LocalPlayer.Character.Head
 orbittingbrick = z
 orbittingbrick.Anchored = true
@@ -64,9 +70,3 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
 end
 end
-
-
-we2=Instance.new("Weld",z2)
-we2.Part0=z
-we2.Part1=z2
-we2.C0=CFrame.new(10,0,0)
