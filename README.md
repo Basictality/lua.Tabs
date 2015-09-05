@@ -44,3 +44,21 @@ wait()
 orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
 end
 end
+
+
+
+
+
+
+brick1 = z2
+orbittingbrick1 = z2
+orbittingbrick1.Anchored = true
+orbittingbrick1.CanCollide = true
+distancefrombrick1 = 5
+
+while true do 
+for i = 0,550 do
+wait()
+orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick1)
+end
+end
