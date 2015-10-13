@@ -1,64 +1,34 @@
-r65 = game.Players.LocalPlayer.Character
+plyr = game.Players.LocalPlayer.Character
+orbp1 = Instance.new("Part",plyr.Torso)
+torso = orbp1
+orbp1.Size = Vector3.new(1,1,1)
+orbp1.Name = "orbp1"
+orbp1.Locked = true
+orbp1.CanCollide = true
+orbp1.Shape = "Ball"
+orbp1.Material = "Neon"
+orbp1.Transparency=0.3
 
-z=Instance.new("Part",r65)
-z.Transparency = 0.6
-z.FormFactor = "Custom"
-z.Size = Vector3.new(15,12,0)
-z.TopSurface = "Smooth"
-z.BottomSurface = "Smooth"
-z.Color = Color3.new(0,0,0)
-
-z2=Instance.new("Part",z)
-z2.Transparency = 0.6
-z2.FormFactor = "Custom"
-z2.Size = Vector3.new(15,10,0)
-z2.TopSurface = "Smooth"
-z2.BottomSurface = "Smooth"
-z2.Color = Color3.new(0,0,0)
-
-z23=Instance.new("SelectionBox",z2)
-z23.Adornee=z2
-z23.Transparency=0.5
-z23.Color=BrickColor.new('Teal');
-
-x=Instance.new("SelectionBox",z)
-x.Adornee=z
-x.Transparency=0.5
-x.Color=BrickColor.new('Really black');
-
-we2=Instance.new("Weld",z2)
-we2.Part0=z
-we2.Part1=z2
-we2.C0=CFrame.new(10,0,0)
-
-
-brick = game.Players.LocalPlayer.Character.Head
-orbittingbrick = z
+brick = game.Players.LocalPlayer.Character.Torso
+orbittingbrick = orbp1
 orbittingbrick.Anchored = true
 orbittingbrick.CanCollide = true
 distancefrombrick = 5
 
+
 while true do 
 for i = 0,360 do
+pa=Instance.new("Part",orbp1)
+pa.FormFactor = "Custom"
+pa.Material = "Neon"
+pa.Size = Vector3.new(0.1,0.1,0.1)
+pa.BrickColor = BrickColor.new'Really black'
+pa.CFrame = orbp1.CFrame
+pa.Anchored = true
+pa.CanCollide = false
+game.Debris:AddItem(pa,1)
 wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick)
+orbittingbrick.CFrame = CFrame.new(brick.Position) * CFrame.Angles(0.5,math.rad(i),0) * CFrame.new(0,0,-distancefrombrick)
 end
 end
 
-
-
-
-
-
-brick1 = z2
-orbittingbrick1 = z2
-orbittingbrick1.Anchored = true
-orbittingbrick1.CanCollide = true
-distancefrombrick1 = 5
-
-while true do 
-for i = 0,550 do
-wait()
-orbittingbrick.CFrame = brick.CFrame * CFrame.new(0,4,-distancefrombrick1)
-end
-end
